@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 export default function Sidebar() {
   const [sidebar, setSidebar] = useState(false)
-  const sidebarState = sidebar ? 'w-11/12' : 'w-0'
+  const sidebarState = sidebar ? 'w-10/12' : 'w-0'
 
   return (
     <div>
@@ -12,7 +12,7 @@ export default function Sidebar() {
         </svg>
       </div>
 
-      <div className={`bg-gray-600 max-w-sm w-9/12 absolute right-0 top-0 h-screen transition-all duration-300 delay-75 z-20 ${sidebarState}`}>
+      <div className={`bg-gray-600 max-w-sm absolute right-0 top-0 h-screen transition-all duration-300 delay-75 z-20 ${sidebarState}`}>
         
       </div>
       <div className='absolute w-full h-full top-0 left-0 bg-black bg-opacity-50 z-10' hidden={!sidebar} onClick={() => setSidebar(!sidebar)} />

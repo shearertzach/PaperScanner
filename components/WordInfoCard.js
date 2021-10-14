@@ -46,6 +46,12 @@ export default function WordInfoCard({ word, setWord }) {
               )
             }
           })}
+          <button
+            className='w-full mt-5 px-8 py-2 border-2 border-blue-400 rounded-md font-semibold hover:bg-blue-300 transition-all'
+            onClick={() => closeCard()}
+          >
+            Close
+          </button>
         </div>
       </div>
       <div className='absolute w-full h-full top-0 left-0 bg-black bg-opacity-50 z-10' onClick={() => closeCard()} />
