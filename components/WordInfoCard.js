@@ -5,7 +5,7 @@ export default function WordInfoCard({ word, setWord }) {
   const [loading, setLoading] = useState(true)
 
   async function getWordInfo() {
-    let url = `http://localhost:3000/api/synonym/${word}`
+    let url = `/api/synonym/${word}`
     let res = await fetch(url)
     let json = await res.json()
     setWordInfo(json)

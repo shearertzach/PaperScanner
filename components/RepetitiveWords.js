@@ -3,7 +3,7 @@ import RepetitiveWordCard from './RepetitiveWordCard'
 
 export default function RepetitiveWords({ words, setWord }) {
   let repetitiveWordsAmount = Object.keys(words).filter(word => words[word].instances > 1).length
-  var sortable = [];
+  let sortable = [];
 
   function compare(a, b) {
     if (a.instances > b.instances) return -1;
@@ -21,9 +21,7 @@ export default function RepetitiveWords({ words, setWord }) {
       <p className='text-2xl text-center mb-5'>Found {repetitiveWordsAmount} word(s) with multiple instances.</p>
       <div className='flex flex-wrap justify-center'>
         {sortable.sort(compare).map(word => {
-          if (word.instances > 1) return (
-            <RepetitiveWordCard word={word} key={word.value} setWord={setWord} />
-          )
+          if (word.instances > 1) return <RepetitiveWordCard word={word} key={word.value} setWord={setWord} />
         })}
       </div>
     </div>

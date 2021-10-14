@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import InputBox from '../components/InputBox'
 import Navbar from '../components/Navbar'
 import RepetitiveWords from '../components/RepetitiveWords'
