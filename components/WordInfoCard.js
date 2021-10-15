@@ -24,7 +24,7 @@ export default function WordInfoCard({ word, setWord }) {
 
 
   return (
-    <div className='absolute w-screen h-screen top-0 left-0 z-0'>
+    <div className='absolute w-screen max-h-screen h-screen top-0 left-0 z-0'>
       <div className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20 w-11/12 max-w-2xl overflow-y-scroll' style={{ maxHeight: "95%" }}>
         <div className='px-5 py-5 bg-gray-700 rounded-t-lg text-gray-200 text-3xl'>Viewing <span className='font-semibold'>{word}</span>.</div>
         <div className='p-5 bg-white rounded-b-lg'>
